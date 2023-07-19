@@ -1,18 +1,17 @@
 "use client";
 
 import React from "react";
-import { headerStyles } from "./header.styles";
+import styles from "./header.module.css";
 
 export const Header = () => {
   return (
-    <div className="header">
+    <div className={styles.header}>
       {"FORREST SUN"}
-      <div className="headerMenu">
+      <div className={styles.headerMenu}>
         <button onClick={() => {}}>{"HOME"}</button>
         <button>{"PROJECTS"}</button>
         <button>{"ABOUT"}</button>
       </div>
-      <style jsx>{headerStyles}</style>
     </div>
   );
 };
