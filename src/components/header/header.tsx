@@ -8,9 +8,8 @@ export const Header = () => {
     <div className={styles.header}>
       {"FORREST SUN"}
       <div className={styles.headerMenu}>
-        <button onClick={() => {}}>{"HOME"}</button>
-        <button>{"PROJECTS"}</button>
-        <button>{"ABOUT"}</button>
+        <button onClick={() => (window.location.href = "./")}>{"HOME"}</button>
+        <button onClick={() => (window.location.href = "./about")}>{"ABOUT"}</button>
       </div>
     </div>
   );

@@ -1,10 +1,11 @@
-import { Header } from "@/components";
-import Image from "next/image";
+import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <div>
-      <Header />
+    <div className={styles.main}>
+      <h1>Home Page</h1>
+      <div>Hello, world!</div>
+      <div>I am Forrest Sun.</div>
     </div>
   );
 }
