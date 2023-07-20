@@ -1,4 +1,5 @@
 import styles from "./page.module.css";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -6,6 +7,7 @@ export default function Home() {
       <h1>Home Page</h1>
       <div>Hello, world!</div>
       <div>I am Forrest Sun.</div>
+      <Image alt="Main Picture" src="/main.JPG" quality={100} width={500} height={500} />
     </div>
   );
 }
