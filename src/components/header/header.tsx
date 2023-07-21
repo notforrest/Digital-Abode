@@ -8,9 +8,9 @@ export const Header = () => {
     <div className={styles.header}>
       {"FORREST SUN"}
       <div className={styles.headerMenu}>
-        <button onClick={() => (window.location.href = "./")}>{"HOME"}</button>
-        <button onClick={() => (window.location.href = "./blogs")}>{"BLOGS"}</button>
-        <button onClick={() => (window.location.href = "./about")}>{"ABOUT"}</button>
+        <button onClick={() => (window.location.href = "/")}>{"HOME"}</button>
+        <button onClick={() => (window.location.href = "/blogs/cs373-blogs")}>{"BLOGS"}</button>
+        <button onClick={() => (window.location.href = "/about")}>{"ABOUT"}</button>
       </div>
     </div>
   );
