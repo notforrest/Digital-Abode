@@ -1,0 +1,14 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1em;
+}
+
+.header {
+  font-size: 2em;
+}
+
+.date {
+  font-style: italic;
+}

@@ -1,0 +1,15 @@
+.main {
+  flex-direction: column;
+  margin: 2em 5%;
+}
+
+.main div:not(:first-child) {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+  line-height: 1.25em;
+}
+
+.main ul {
+  margin-left: 1em;
+}
