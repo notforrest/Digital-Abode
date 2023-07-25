@@ -1,15 +1,27 @@
 .main {
   flex-direction: column;
   margin: 2em 5%;
+  font-size: 4vw;
+
+  @media (min-width: 600px) {
+    font-size: 2.5vw;
+  }
+  @media (min-width: 992px) {
+    font-size: 2vw;
+  }
 }
 
-.main div:not(:first-child) {
+.main > :not(hr + div):not(div:first-of-type) {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
   line-height: 1.25em;
 }
 
 .main ul {
   margin-left: 1em;
+}
+
+.main i {
+  margin-top: 1em;
 }
