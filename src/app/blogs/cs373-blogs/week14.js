@@ -1,3 +1,7 @@
+export const INDEX = 14;
+
+export const DATE = "04-23-2023";
+
 export const QUESTIONS = [
   "Some of the long-term takeaways from this class:",
   "How well do you think the course conveyed those takeaways?",

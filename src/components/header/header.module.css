@@ -16,6 +16,7 @@
 
   .headerMenu > button {
     font-family: var(--font-alumni-sans);
+    cursor: pointer;
   }
 
   .headerMenu > :hover {
