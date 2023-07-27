@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaChevronUp } from "react-icons/fa6";
 import styles from "./scroll-top.module.css";
 
@@ -17,13 +17,17 @@ export const ScrollTopButton = () => {
   };
 
   const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+    if (typeof window !== "undefined") {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
   };
 
-  window.addEventListener("scroll", toggleVisible);
+  useEffect(() => {
+    window.addEventListener("scroll", toggleVisible);
+  }, []);
 
   return (
     <button className={styles["scroll-top"]} style={{ display: visible ? "flex" : "none" }}>
