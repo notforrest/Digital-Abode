@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   font-family: var(--font-alumni-sans);
-  font-size: 10vw;
+  font-size: 5rem;
   justify-content: center;
 
   .headerMenu {
@@ -16,6 +16,7 @@
 
   .headerMenu > button {
     font-family: var(--font-alumni-sans);
+    font-size: 0.5em;
     cursor: pointer;
   }
 

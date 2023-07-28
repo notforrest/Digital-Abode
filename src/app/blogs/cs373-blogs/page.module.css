@@ -1,14 +1,8 @@
-.main {
+.main > div {
+  display: flex;
   flex-direction: column;
-  margin: 2em 10%;
-  font-size: 4vw;
-
-  @media (min-width: 600px) {
-    font-size: 2.5vw;
-  }
-  @media (min-width: 992px) {
-    font-size: 2vw;
-  }
+  align-content: center;
+  width: 800px;
 }
 
 .main > :not(hr + div):not(div:first-of-type) {

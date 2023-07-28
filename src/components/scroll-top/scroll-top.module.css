@@ -2,9 +2,9 @@
   position: fixed;
   right: 2vw;
   bottom: 0;
-  height: 5vw;
-  width: 5vw;
-  font-size: 1em;
+  height: 2rem;
+  width: 2rem;
+  font-size: 1rem;
   z-index: 1;
   background-color: dimgray;
   border-radius: 50px;
