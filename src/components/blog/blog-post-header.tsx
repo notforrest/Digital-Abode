@@ -12,7 +12,7 @@ export default function BlogPostHeader({ index, date }: BlogPostHeaderProps) {
 
   return (
     <div className={styles.main}>
-      <div className={styles.header}>{`Blog Entries: Week ${index}`}</div>
+      <h2>{`Blog Entries: Week ${index}`}</h2>
       <div className={styles.date}>{formattedDate}</div>
     </div>
   );

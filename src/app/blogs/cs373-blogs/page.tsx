@@ -20,20 +20,22 @@ const blogPosts = [WK14, WK13, WK12, WK9, WK8, WK7, WK6, WK5, WK3, WK2, WK1];
 
 export default function CS373Blogs() {
   return (
-    <div className={styles.main}>
-      <ScrollTopButton />
-      {blogPosts.map((blogPost) => (
-        <Fragment key={blogPost.INDEX}>
-          <BlogPostHeader index={blogPost.INDEX} date={blogPost.DATE} />
-          {blogPost.QUESTIONS.map((question, index) => (
-            <Fragment key={index}>
-              <strong>{question}</strong>
-              <i>{blogPost.ANSWERS[index]}</i>
-            </Fragment>
-          ))}
-          <hr />
-        </Fragment>
-      ))}
+    <div className={styles.page}>
+      <div className={styles.main}>
+        <ScrollTopButton />
+        {blogPosts.map((blogPost) => (
+          <Fragment key={blogPost.INDEX}>
+            <BlogPostHeader index={blogPost.INDEX} date={blogPost.DATE} />
+            {blogPost.QUESTIONS.map((question, index) => (
+              <Fragment key={index}>
+                <strong>{question}</strong>
+                <i>{blogPost.ANSWERS[index]}</i>
+              </Fragment>
+            ))}
+            <hr />
+          </Fragment>
+        ))}
+      </div>
     </div>
   );
 }

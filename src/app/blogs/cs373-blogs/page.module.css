@@ -1,8 +1,11 @@
-.main > div {
+.page {
   display: flex;
-  flex-direction: column;
-  align-content: center;
+  justify-content: center;
   width: 800px;
+
+  @media (max-width: 800px) {
+    width: 90%;
+  }
 }
 
 .main > :not(hr + div):not(div:first-of-type) {
