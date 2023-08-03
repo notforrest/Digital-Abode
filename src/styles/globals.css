@@ -120,6 +120,10 @@ button {
   color: white;
 }
 
+code {
+  margin: 0.5em 1em;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

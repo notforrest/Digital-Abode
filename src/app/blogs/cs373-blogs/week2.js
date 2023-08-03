@@ -66,7 +66,7 @@ if __name__ == "__main__":
       main()`}
       language="python"
       showLineNumbers={false}
-      customStyle={{ borderRadius: "1em", margin: "1em", fontStyle: "normal" }}
+      customStyle={{ borderRadius: "1em", margin: "1em 0", fontStyle: "normal" }}
       theme={dracula}
     />
     One of the points he brought up is viewing it as an “unspoken rule” for Python programs. If
