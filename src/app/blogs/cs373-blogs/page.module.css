@@ -1,13 +1,11 @@
-.main {
-  flex-direction: column;
-  margin: 2em 10%;
-  font-size: 4vw;
+.page {
+  display: flex;
+  justify-content: center;
+  width: 800px;
+  margin-top: 1em;
 
-  @media (min-width: 600px) {
-    font-size: 2.5vw;
-  }
-  @media (min-width: 992px) {
-    font-size: 2vw;
+  @media (max-width: 800px) {
+    width: 90%;
   }
 }
 

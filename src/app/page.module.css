@@ -1,8 +1,25 @@
+.page {
+  display: flex;
+  justify-content: center;
+  width: 800px;
+  margin-top: 1em;
+
+  @media (max-width: 800px) {
+    width: 90%;
+  }
+}
+
+.imgContainer {
+  position: relative;
+  width: 25rem;
+  height: 25rem;
+}
+
 .main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 2em;
+  font-size: 2rem;
   margin: 1em;
   line-height: 2em;
 }

@@ -5,7 +5,7 @@ import { CodeBlock, dracula } from "react-code-blocks";
 
 export const INDEX = 2;
 
-export const DATE = "01-24-2023";
+export const DATE = "2023-01-24";
 
 export const QUESTIONS = [
   "What did you do this past week?",
@@ -66,7 +66,7 @@ if __name__ == "__main__":
       main()`}
       language="python"
       showLineNumbers={false}
-      customStyle={{ borderRadius: "1em", margin: "1em", fontStyle: "normal" }}
+      customStyle={{ borderRadius: "1em", margin: "1em 0", fontStyle: "normal" }}
       theme={dracula}
     />
     One of the points he brought up is viewing it as an “unspoken rule” for Python programs. If

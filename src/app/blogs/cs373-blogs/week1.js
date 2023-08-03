@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const INDEX = 1;
 
-export const DATE = "01-15-2023";
+export const DATE = "2023-01-15";
 
 export const QUESTIONS = [
   "Where did you grow up?",
