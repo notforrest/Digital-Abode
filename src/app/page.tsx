@@ -1,6 +1,5 @@
 import styles from "./page.module.css";
 import Image from "next/image";
-import main from "../../public/main.jpg";
 
 export default function Home() {
   return (
@@ -10,7 +9,7 @@ export default function Home() {
         <div>Hello, world!</div>
         <div>I am Forrest Sun.</div>
         <div className={styles.imgContainer}>
-          <Image alt="Main Picture" src={main} fill />
+          <Image alt="Main Picture" src={"/main.JPG"} fill />
         </div>
       </div>
     </div>

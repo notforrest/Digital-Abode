@@ -117,6 +117,7 @@ button {
   background-color: transparent;
   border: 0;
   width: inherit;
+  color: white;
 }
 
 @media (prefers-color-scheme: dark) {

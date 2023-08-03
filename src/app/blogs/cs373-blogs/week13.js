@@ -2,7 +2,7 @@ import { YoutubeEmbed } from "@/components/youtube-embed/youtube-embed";
 
 export const INDEX = 13;
 
-export const DATE = "04-16-2023";
+export const DATE = "2023-04-16";
 
 export const QUESTIONS = [
   "What did you do this past week?",

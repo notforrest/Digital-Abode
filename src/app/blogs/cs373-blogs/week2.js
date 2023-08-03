@@ -5,7 +5,7 @@ import { CodeBlock, dracula } from "react-code-blocks";
 
 export const INDEX = 2;
 
-export const DATE = "01-24-2023";
+export const DATE = "2023-01-24";
 
 export const QUESTIONS = [
   "What did you do this past week?",

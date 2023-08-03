@@ -1,6 +1,6 @@
 export const INDEX = 14;
 
-export const DATE = "04-23-2023";
+export const DATE = "2023-04-23";
 
 export const QUESTIONS = [
   "Some of the long-term takeaways from this class:",

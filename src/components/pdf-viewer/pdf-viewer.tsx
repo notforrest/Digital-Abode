@@ -26,7 +26,12 @@ export default function PDFViewer({ file }: PDFViewerProps) {
   return (
     <div id="pdfDocument">
       <Document file={file}>
-        <Page pageNumber={1} renderAnnotationLayer={false} scale={scale}></Page>
+        <Page
+          pageNumber={1}
+          renderAnnotationLayer={false}
+          renderTextLayer={false}
+          scale={scale}
+        ></Page>
       </Document>
     </div>
   );
