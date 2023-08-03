@@ -8,8 +8,8 @@ export const Header = () => {
   const [selectedBlogOption, setSelectedBlogOption] = useState<string>();
 
   const blogOptions = [
-    { value: "cs373-blogs", label: "CS 373 Blogs" },
     { value: "cs371p-blogs", label: "CS 371p Blogs" },
+    { value: "cs373-blogs", label: "CS 373 Blogs" },
   ];
 
   return (
@@ -23,6 +23,7 @@ export const Header = () => {
             IndicatorSeparator: () => null,
           }}
           controlShouldRenderValue={false}
+          isSearchable={false}
           onChange={(selectedOption) => {
             window.location.href = `/blogs/${selectedOption?.value}`;
           }}
