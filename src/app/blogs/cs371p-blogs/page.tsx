@@ -4,9 +4,10 @@ import BlogPostHeader from "@/components/blog/blog-post-header";
 import styles from "./page.module.css";
 import { ScrollTopButton } from "@/components/scroll-top/scroll-top";
 import { Fragment } from "react";
+import * as WK2 from "./week2";
 import * as WK1 from "./week1";
 
-const blogPosts = [WK1];
+const blogPosts = [WK2, WK1];
 
 export default function CS371pBlogs() {
   return (
