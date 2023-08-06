@@ -49,12 +49,12 @@ export const ANSWERS = [
     sure what to expect moving on but that's a great confidence booster for myself. Additionally, I
     had the chance to hang out a lot with my officer board so that was great bonding with them.
   </>,
-  <p>
+  <span>
     My tip is not super complex or “out there,” so to speak, and is more of a refresher of one of
     the topics that I'm sure most of us are very familiar with: Big O! This video by NeetCode is a
     good review video to have a better understanding of common Big Os like O(1) or O(n
     <sup style={{ lineHeight: 0 }}>2</sup>) while also giving us tips on commonly misunderstood
     complexities like O(n * m) or O(nlogn). Great watch!
     <YoutubeEmbed embedId={"BgLTDT03QtU"} />
-  </p>,
+  </span>,
 ];

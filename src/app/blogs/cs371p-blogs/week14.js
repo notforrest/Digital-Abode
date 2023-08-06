@@ -1,6 +1,6 @@
 export const INDEX = 14;
 
-export const DATE = "2023-04-23";
+export const DATE = "2022-12-05";
 
 export const QUESTIONS = [
   "Some of the long-term takeaways from this class:",
@@ -13,8 +13,6 @@ export const QUESTIONS = [
   "You should have read five papers that describe SOLID design: Single Responsibility, Open-Closed Principle, Liskov Substitution, Interface Segregation, and Dependency Inversion. What insights have they given you?",
   "You should have read two papers that advised minimizing getters and setters. What insights have they given you?",
   "What required tool did you not know and now find very useful?",
-  "What's the most helpful Web dev tool your group used that was not required?",
-  "How did you feel about your group having to self-teach many technologies?",
   "In the end, how much did you learn relative to other UT CS classes?",
 ];
 
@@ -22,17 +20,20 @@ export const ANSWERS = [
   <ul>
     <li>test first, test during, test after; test, test, test</li>
     <li>
-      when designing <b>algorithms</b>, demand the <b>weakest</b> capabilities (e.g., iterable vs.
-      indexable)
+      when designing <b>algorithms</b>, demand the <b>weakest</b> iterators (e.g., bidirectional vs.
+      random access)
     </li>
     <li>
-      when designing <b>containers</b>, provide the <b>strongest</b> capabilities (e.g., indexable
-      vs. iterable)
+      when designing <b>containers</b>, provide the <b>strongest</b> iterators (e.g., random access
+      vs. bidirectional)
     </li>
     <li>
-      build <b>decorators</b> on top of <b>containers</b>, <b>iterators</b>, and <b>functions</b>
+      build <b>adapters</b> on top of <b>containers</b> and <b>iterators</b>
     </li>
-    <li>utilize the benefits of being lazy (e.g., yield)</li>
+    <li>
+      do <b>not</b> use <b>new</b> and <b>delete</b>; use <b>containers</b> or <b>allocators</b>{" "}
+      instead
+    </li>
     <li>
       always look for <b>reuse</b> and <b>symmetry</b> in your code
     </li>
@@ -65,14 +66,13 @@ export const ANSWERS = [
     solution for that, but when he described it, it seemed pretty vague.
   </>,
   <>
-    Although I didn't use it much this semester, I did frequently use it last semester. Help
-    Sessions were also quite helpful, as TAs could be there in-person to basically help anyone with
-    anything. I personally never had a problem with this but Help Sessions can definitely be not as
-    helpful when there are a high amount of people going.
+    Help Sessions was also quite helpful, as Philo and Alex could be there in-person to basically
+    help anyone with anything. I personally never had a problem with this but Help Sessions can
+    definitely be not as helpful when there are a high amount of people going.
   </>,
   <>
-    The TAs I got help from, Yuhan and William, were both incredibly helpful in their efforts to
-    make sure that we do the best that we can!
+    The TAs, Philo and Alex, were both incredibly helpful in their efforts to make sure that we do
+    the best that we can!
   </>,
   <>
     In general, the principles I've learned from these papers were pretty familiar but understanding
@@ -85,25 +85,14 @@ export const ANSWERS = [
     be extremely detrimental to object-oriented programming.
   </>,
   <>
-    The tool I had the most experience using during the project was the entire AWS foundation.
-    Although it's incredibly specific to web development, the wealth of information I learned will
-    be invaluable.
-  </>,
-  <>
-    I think the most helpful tool was probably VSCode's LiveShare. This was a simple way to share
-    code between our team and see what each other are doing for an effective experience. Other than
-    that, simple communication through Discord is always helpful.
-  </>,
-  <>
-    This was definitely the least exciting and fun part of the entire class structure. If there's
-    anything I felt overwhelmed with and disliked, it would be learning all of these massive systems
-    by ourselves. We clearly worked through it in the end, but it was mind-bogging at many, many
-    times in the process.
+    The most useful tool I've used so far is definitely GCov and ValGrind. Seeing the Unit Tests'
+    coverage as well as the memory information from ValGrind seems like an essential tool now when
+    coding larger projects.
   </>,
   <>
     After the end of this class, I can say I easily learned a lot in this class, more than in many
-    of my other classes. The aspect of Python programming and web dev seems especially important in
-    computer science and my future career path. I am unquestionably satisfied with the knowledge
-    that I exited the class with.
+    of my other classes. The aspect of object-oriented programming and the structure of C++ seems
+    especially important in computer science and my future career path. I am unquestionably
+    satisfied with the knowledge that I exited the class with.
   </>,
 ];
