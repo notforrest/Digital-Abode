@@ -1,5 +1,3 @@
-"use client";
-
 import { YoutubeEmbed } from "@/components/youtube-embed/youtube-embed";
 import { CodeBlock, dracula } from "react-code-blocks";
 

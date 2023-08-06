@@ -14,10 +14,13 @@
     width: 100%;
   }
 
-  .headerMenu > button {
-    font-family: var(--font-alumni-sans);
-    font-size: 0.4em;
+  .headerMenu * {
     cursor: pointer;
+    font-family: var(--font-alumni-sans);
+    font-size: 2rem;
+    text-align: center;
+    width: inherit;
+    margin: 0;
   }
 
   .headerMenu > :hover {
