@@ -16,13 +16,18 @@ import * as WK4 from "./week4";
 import * as WK3 from "./week3";
 import * as WK2 from "./week2";
 import * as WK1 from "./week1";
+import { TableOfContents } from "@/components/table-of-contents/table-of-contents";
 
 const blogPosts = [WK14, WK13, WK11, WK10, WK8, WK7, WK6, WK5, WK4, WK3, WK2, WK1];
 
 export default function CS371pBlogs() {
   return (
     <div className={styles.page}>
-      <div className={styles.main}>
+      {/* <TableOfContents
+        headings={blogPosts.map((blogPost) => blogPost.INDEX.toString())}
+        title={"CS371p Blogs"}
+      /> */}
+      <div className={styles.blog}>
         <ScrollTopButton />
         {blogPosts.map((blogPost) => (
           <Fragment key={blogPost.INDEX}>
@@ -33,7 +38,7 @@ export default function CS371pBlogs() {
                 <i>{blogPost.ANSWERS[index]}</i>
               </Fragment>
             ))}
-            <hr />
+            <hr style={{ columnSpan: "all" }} />
           </Fragment>
         ))}
       </div>

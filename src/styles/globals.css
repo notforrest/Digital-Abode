@@ -81,7 +81,7 @@ html,
 body {
   font-size: 12px;
   max-width: 100vw;
-  overflow-x: hidden;
+  scroll-behavior: smooth;
 
   @media (min-width: 600px) {
     font-size: 20px;
@@ -113,6 +113,11 @@ h2 {
   font-weight: 400;
 }
 
+h3 {
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
 button {
   background-color: transparent;
   border: 0;
@@ -121,6 +126,33 @@ button {
 
 code {
   margin: 0.5em 1em;
+}
+
+hr {
+  border: none;
+  margin-top: 1em;
+  position: relative;
+}
+
+hr::before {
+  background-color: black;
+  content: "❦";
+  display: block;
+  letter-spacing: 5vw;
+  margin: 0 auto;
+  text-align: center;
+  text-indent: 5vw;
+  width: fit-content;
+  white-space: pre;
+  z-index: 1;
+}
+
+hr::after {
+  border-bottom: solid white 1px;
+  content: " ";
+  position: absolute;
+  top: 50%;
+  width: 100%;
 }
 
 @media (prefers-color-scheme: dark) {

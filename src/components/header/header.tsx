@@ -15,7 +15,7 @@ export const Header = () => {
   return (
     <div className={styles.header}>
       {"FORREST SUN"}
-      <div className={styles.headerMenu}>
+      <nav className={styles.headerMenu}>
         <button onClick={() => (window.location.href = "/")}>{"HOME"}</button>
         <Select
           components={{
@@ -46,6 +46,9 @@ export const Header = () => {
               backgroundColor: state.isFocused ? "#1f1f1f" : "black",
               fontSize: "16px",
               color: "white",
+              ":hover ": {
+                scale: "1.05",
+              },
             }),
             placeholder: (provided) => ({
               ...provided,
@@ -54,7 +57,7 @@ export const Header = () => {
           }}
         />
         <button onClick={() => (window.location.href = "/about")}>{"ABOUT"}</button>
-      </div>
+      </nav>
     </div>
   );
 };
