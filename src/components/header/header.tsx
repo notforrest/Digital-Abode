@@ -15,7 +15,7 @@ export const Header = () => {
   return (
     <div className={styles.header}>
       {"FORREST SUN"}
-      <div className={styles.headerMenu}>
+      <nav className={styles.headerMenu}>
         <button onClick={() => (window.location.href = "/")}>{"HOME"}</button>
         <Select
           components={{
@@ -54,7 +54,7 @@ export const Header = () => {
           }}
         />
         <button onClick={() => (window.location.href = "/about")}>{"ABOUT"}</button>
-      </div>
+      </nav>
     </div>
   );
 };
