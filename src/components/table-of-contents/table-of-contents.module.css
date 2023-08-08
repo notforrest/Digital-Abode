@@ -57,7 +57,7 @@
 .tocButton {
   composes: scroll-top from "../scroll-top/scroll-top.module.css";
   display: flex;
-  left: 2em;
+  left: 1.5em;
   margin: 0;
 
   @media (min-width: 1300px) {
