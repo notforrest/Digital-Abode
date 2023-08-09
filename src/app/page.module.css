@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   width: 90%;
-  margin-top: 1em;
 
   @media (min-width: 820px) {
     width: 800px;
@@ -10,9 +9,10 @@
 }
 
 .imgContainer {
+  max-width: 800px;
   position: relative;
-  width: 25rem;
-  height: 25rem;
+  width: 100vw;
+  height: 10em;
 }
 
 .main {
@@ -20,6 +20,14 @@
   flex-direction: column;
   align-items: center;
   font-size: 2rem;
-  margin: 1em;
   line-height: 2em;
+}
+
+.text {
+  font-size: 0.5em;
+  line-height: 2em;
+  margin: 1em;
+  max-width: 800px;
+  text-align: center;
+  width: 90%;
 }
