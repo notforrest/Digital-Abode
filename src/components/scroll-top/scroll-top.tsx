@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import { FaChevronUp } from "react-icons/fa6";
 import styles from "./scroll-top.module.css";
 
-export const ScrollTopButton = () => {
+export default function ScrollTopButton() {
   const [visible, setVisible] = useState(false);
 
   const toggleVisible = () => {
@@ -18,10 +18,7 @@ export const ScrollTopButton = () => {
 
   const scrollToTop = () => {
     if (typeof window !== "undefined") {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
+      window.scrollTo({ top: 0 });
     }
   };
 
@@ -34,4 +31,4 @@ export const ScrollTopButton = () => {
       <FaChevronUp onClick={scrollToTop} />
     </button>
   );
-};
+}

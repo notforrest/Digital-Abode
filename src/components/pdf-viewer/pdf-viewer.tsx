@@ -16,22 +16,19 @@ export default function PDFViewer({ file }: PDFViewerProps) {
   const [scale, setScale] = useState(window.innerWidth / PDF_SCALE_RATIO);
 
   useEffect(() => {
-    const handleResize = () => {
-      setScale(window.innerWidth / PDF_SCALE_RATIO);
-    };
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    if (window.innerWidth < 800) {
+      const handleResize = () => setScale(window.innerWidth / PDF_SCALE_RATIO);
+      window.addEventListener("resize", handleResize);
+      return () => window.removeEventListener("resize", handleResize);
+    } else {
+      setScale(1.2);
+    }
   });
 
   return (
     <div id="pdfDocument">
       <Document file={file}>
-        <Page
-          pageNumber={1}
-          renderAnnotationLayer={false}
-          renderTextLayer={false}
-          scale={scale}
-        ></Page>
+        <Page pageNumber={1} renderAnnotationLayer={false} scale={scale}></Page>
       </Document>
     </div>
   );

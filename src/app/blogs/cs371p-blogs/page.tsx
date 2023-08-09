@@ -1,8 +1,9 @@
 "use client";
 
-import BlogPostHeader from "@/components/blog/blog-post-header";
 import styles from "./page.module.css";
-import { ScrollTopButton } from "@/components/scroll-top/scroll-top";
+import BlogPostHeader from "@/components/blog/blog-post-header";
+import ScrollTopButton from "@/components/scroll-top/scroll-top";
+import TableOfContents from "@/components/table-of-contents/table-of-contents";
 import { Fragment } from "react";
 import * as WK14 from "./week14";
 import * as WK13 from "./week13";
@@ -22,8 +23,12 @@ const blogPosts = [WK14, WK13, WK11, WK10, WK8, WK7, WK6, WK5, WK4, WK3, WK2, WK
 export default function CS371pBlogs() {
   return (
     <div className={styles.page}>
-      <div className={styles.main}>
-        <ScrollTopButton />
+      <TableOfContents
+        headings={blogPosts.map((blogPost) => blogPost.INDEX.toString())}
+        title={"CS371p Blogs"}
+      />
+      <ScrollTopButton />
+      <div className={styles.blog}>
         {blogPosts.map((blogPost) => (
           <Fragment key={blogPost.INDEX}>
             <BlogPostHeader index={blogPost.INDEX} date={blogPost.DATE} />
