@@ -10,6 +10,12 @@
   right: 1.5em;
   width: 1.75em;
   z-index: 1;
+
+  @media (min-width: 1300px) {
+    font-size: 1em;
+    height: 2em;
+    width: 2em;
+  }
 }
 
 .scroll-top:hover {

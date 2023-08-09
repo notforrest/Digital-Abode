@@ -35,7 +35,7 @@ export default function TableOfContents({ headings, title }: TableOfContentsProp
           <ul>
             {headings.map((heading) => (
               <li key={heading}>
-                <a href={`#week${heading}`} onClick={() => setIsOpen(!isOpen)}>
+                <a href={`#week${heading}`} onClick={() => setIsOpen(false)}>
                   <div className={styles.tocEntry}>{`Week ${heading}`}</div>
                 </a>
               </li>
