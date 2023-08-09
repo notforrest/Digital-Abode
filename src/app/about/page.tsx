@@ -11,7 +11,7 @@ export default function About() {
   return (
     <div className={styles.main}>
       <div>Resume</div>
-      <PDFViewer file={"resume-v6.pdf"} />
+      <PDFViewer file={"resume.pdf"} />
     </div>
   );
 }
