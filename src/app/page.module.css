@@ -9,6 +9,7 @@
 }
 
 .imgContainer {
+  margin: 1em;
   max-width: 800px;
   position: relative;
   width: 100vw;
@@ -26,7 +27,6 @@
 .text {
   font-size: 0.5em;
   line-height: 2em;
-  margin: 1em;
   max-width: 800px;
   text-align: center;
   width: 90%;
