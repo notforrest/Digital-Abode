@@ -6,6 +6,7 @@
   font-family: var(--font-alumni-sans);
   font-size: 5rem;
   justify-content: center;
+  margin: 0;
 
   .headerMenu {
     display: flex;

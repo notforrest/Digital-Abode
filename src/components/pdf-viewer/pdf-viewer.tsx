@@ -13,17 +13,9 @@ type PDFViewerProps = {
 const PDF_SCALE_RATIO = 765;
 
 export default function PDFViewer({ file }: PDFViewerProps) {
-  const [scale, setScale] = useState(window.innerWidth / PDF_SCALE_RATIO);
-
-  useEffect(() => {
-    if (window.innerWidth < 800) {
-      const handleResize = () => setScale(window.innerWidth / PDF_SCALE_RATIO);
-      window.addEventListener("resize", handleResize);
-      return () => window.removeEventListener("resize", handleResize);
-    } else {
-      setScale(1.2);
-    }
-  });
+  const [scale, setScale] = useState(
+    window.innerWidth < 800 ? window.innerWidth / PDF_SCALE_RATIO : 1.2
+  );
 
   return (
     <div id="pdfDocument">
