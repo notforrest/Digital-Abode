@@ -95,7 +95,7 @@ export const ANSWERS = [
     One very cool feature on VSCode that I came across on TikTok was this experimental “Sticky
     Scroll” feature. It would keep the name of the top-level function at the top of your screen,
     similar to how you can “freeze” rows and columns in Google Sheets and Excel. Pretty neat!
-    <span style={{ alignSelf: "center", marginTop: "0.5em" }}>
+    <span style={{ marginTop: "0.5em", textAlign: "center" }}>
       Credit:{" "}
       <Link href="https://www.tiktok.com/t/ZTRPJqe9q/">https://www.tiktok.com/t/ZTRPJqe9q/</Link>
     </span>
@@ -107,7 +107,7 @@ export const ANSWERS = [
       layout="responsive"
       style={{ margin: "1em 0 0.5em" }}
     />
-    <div style={{ alignSelf: "center", fontSize: "0.750em" }}>
+    <div style={{ fontSize: "0.75em", textAlign: "center" }}>
       Experimental “Sticky Scroll” feature on VSCode (1.70.1)
     </div>
   </>,
