@@ -62,7 +62,7 @@ export const ANSWERS = [
     undergrads to run through and easily see jobs to apply for!
     <Link
       href="https://github.com/pittcsc/Summer2023-Internships"
-      style={{ alignSelf: "center", marginTop: "1em" }}
+      style={{ marginTop: "1em", textAlign: "center" }}
     >
       https://github.com/pittcsc/Summer2023-Internships
     </Link>

@@ -1,6 +1,5 @@
 .page {
-  display: flex;
-  justify-content: center;
+  flex: 1;
   width: 90%;
 
   @media (min-width: 820px) {
@@ -9,17 +8,13 @@
 }
 
 .imgContainer {
-  margin: 1em;
+  margin: 1em 0;
   max-width: 800px;
   position: relative;
-  width: 100vw;
   height: 10em;
 }
 
 .main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   font-size: 2rem;
   line-height: 2em;
 }
@@ -28,6 +23,26 @@
   font-size: 0.5em;
   line-height: 2em;
   max-width: 800px;
+  padding-bottom: 1em;
   text-align: center;
-  width: 90%;
+}
+
+.frameworkGrid {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: 1fr;
+
+  @media (min-width: 800px) {
+    gap: 0.75em 0;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.framework {
+  background-color: rgb(18, 18, 18);
+  border: 2px solid white;
+  border-radius: 0.5em;
+  font-size: 0.85em;
+  text-align: center;
+  width: 80%;
 }

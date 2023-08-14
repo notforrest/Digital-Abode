@@ -1,8 +1,18 @@
 .main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  align-self: center;
+  flex: 1;
   font-size: 2rem;
   margin: 1em;
   line-height: 2em;
+  text-align: center;
+  width: fit-content;
+}
+
+.main > div,
+.main > a {
+  margin: 0 auto;
+}
+
+.resumeLink {
+  font-size: 0.5em;
 }

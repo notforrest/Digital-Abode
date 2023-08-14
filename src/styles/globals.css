@@ -75,6 +75,7 @@
   font-family: var(--font-rubik);
   margin: auto;
   padding: 0;
+  width: 100%;
 }
 
 html,
@@ -92,10 +93,13 @@ body {
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
   background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb)))
     rgb(var(--background-start-rgb));
   caret-color: transparent;
+  color: rgb(var(--foreground-rgb));
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 a {
@@ -106,16 +110,24 @@ a {
 h1 {
   font-size: 2em;
   font-weight: 600;
+  text-align: center;
 }
 
 h2 {
   font-size: 2em;
   font-weight: 400;
+  text-align: center;
 }
 
 h3 {
   font-size: 1.5em;
   font-weight: 300;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+hr {
+  margin-bottom: 0.5em;
 }
 
 button {
