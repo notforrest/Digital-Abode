@@ -7,7 +7,7 @@ export default function Home() {
   const damLink = (
     <Link href="https://ugs.utexas.edu/bdp/programs/dam">{"Digital Arts & Media"}</Link>
   );
-  const techList = ["React", "Typescript", "HTML/CSS", "Python", "Java", "C/C++"];
+  const languageList = ["React", "Typescript", "HTML/CSS", "Python", "Java", "C/C++"];
 
   return (
     <div className={styles.page}>
@@ -21,16 +21,34 @@ export default function Home() {
         </div>
         <div className={styles.text}>
           {"Take a look at my "}
-          <Link href={"./about"}>{"resume"}</Link>
+          <Link href={"./resume"}>{"resume"}</Link>
           {"!"}
         </div>
         <hr />
 
         <h3>{"Tech Stack"}</h3>
         <div className={styles.frameworkGrid}>
-          {techList.map((tech) => (
-            <div className={styles.framework}>{tech}</div>
-          ))}
+          <div className={styles.framework}>
+            {"Languages"}
+            <hr className={styles.frameworkLine} />
+            <p className={styles.frameworkSublist}>
+              {"React, TypeScript, HTML / CSS, Python, Java, C, C++"}
+            </p>
+          </div>
+
+          <div className={styles.framework}>
+            {"Platforms"}
+            <hr className={styles.frameworkLine} />
+            <p className={styles.frameworkSublist}>{"Amazon Web Services, GitHub, Vercel"}</p>
+          </div>
+
+          <div className={styles.framework}>
+            {"Programs"}
+            <hr className={styles.frameworkLine} />
+            <p className={styles.frameworkSublist}>
+              {"Visual Studio Code, DevTools, JetBrains, Adobe Premiere Pro, Figma"}
+            </p>
+          </div>
         </div>
       </div>
     </div>
