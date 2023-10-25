@@ -17,6 +17,7 @@ export const Header = () => {
       {"FORREST SUN"}
       <nav className={styles.headerMenu}>
         <button onClick={() => (window.location.href = "/")}>{"HOME"}</button>
+        <button onClick={() => (window.location.href = "/portfolio")}>{"PORTFOLIO"}</button>
         <Select
           components={{
             DropdownIndicator: () => null,
