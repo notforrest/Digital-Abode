@@ -29,7 +29,7 @@ export const Header = () => {
             window.location.href = `/blogs/${selectedOption?.value}`;
           }}
           options={blogOptions}
-          placeholder={"CLASS BLOGS"}
+          placeholder={"BLOGS"}
           styles={{
             control: (provided) => ({
               ...provided,

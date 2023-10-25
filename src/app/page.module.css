@@ -42,8 +42,9 @@
   background-color: rgb(18, 18, 18);
   border: 2px solid white;
   border-radius: 0.5em;
+  flex-direction: column;
   font-size: 0.85em;
-  height: 100px;
+  height: 3em;
   text-align: center;
   transition: 0.5s;
   width: 90%;
@@ -52,7 +53,7 @@
 .framework:hover {
   background-color: rgb(65, 65, 65);
   border: 2px solid rgb(65, 65, 65);
-  height: 170px;
+  height: 4.5em;
   transition: 0.5s;
 }
 
@@ -68,6 +69,11 @@
   transition: 0.5s 0.1s;
 }
 
+.frameworkText {
+  line-height: 3em;
+}
+
 .frameworkLine {
+  display: none;
   width: 75%;
 }

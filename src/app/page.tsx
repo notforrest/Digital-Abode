@@ -29,7 +29,7 @@ export default function Home() {
         <h3>{"Tech Stack"}</h3>
         <div className={styles.frameworkGrid}>
           <div className={styles.framework}>
-            {"Languages"}
+            <span className={styles.frameworkText}>{"Languages"}</span>
             <hr className={styles.frameworkLine} />
             <p className={styles.frameworkSublist}>
               {"React, TypeScript, HTML / CSS, Python, Java, C, C++"}
@@ -37,13 +37,13 @@ export default function Home() {
           </div>
 
           <div className={styles.framework}>
-            {"Platforms"}
+            <span className={styles.frameworkText}>{"Platforms"}</span>
             <hr className={styles.frameworkLine} />
             <p className={styles.frameworkSublist}>{"Amazon Web Services, GitHub, Vercel"}</p>
           </div>
 
           <div className={styles.framework}>
-            {"Programs"}
+            <span className={styles.frameworkText}>{"Programs"}</span>
             <hr className={styles.frameworkLine} />
             <p className={styles.frameworkSublist}>
               {"Visual Studio Code, DevTools, JetBrains, Adobe Premiere Pro, Figma"}
