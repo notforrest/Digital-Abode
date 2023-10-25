@@ -8,7 +8,7 @@ const PDFViewer = dynamic(() => import("@/components/pdf-viewer/pdf-viewer"), {
   ssr: false,
 });
 
-export default function About() {
+export default function Resume() {
   return (
     <div className={styles.main}>
       <h3>Resume</h3>
