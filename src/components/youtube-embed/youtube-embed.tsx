@@ -8,7 +8,7 @@ type YouTubeEmbedProps = {
 };
 
 export const YoutubeEmbed = ({ embedId }: YouTubeEmbedProps) => (
-  <>
+  <div>
     <div className={styles.video}>
       <iframe
         width="853"
@@ -35,5 +35,5 @@ export const YoutubeEmbed = ({ embedId }: YouTubeEmbedProps) => (
         {`https://www.youtube.com/watch?v=${embedId}`}
       </Link>
     </div>
-  </>
+  </div>
 );
