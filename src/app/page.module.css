@@ -29,13 +29,13 @@
 
 .frameworkGrid {
   display: grid;
-  gap: 1em;
+  gap: 0.75em;
   grid-template-columns: 1fr;
 
-  @media (min-width: 800px) {
+  /* @media (min-width: 800px) {
     gap: 0.75em 0;
     grid-template-columns: repeat(2, 1fr);
-  }
+  } */
 }
 
 .framework {
@@ -43,6 +43,31 @@
   border: 2px solid white;
   border-radius: 0.5em;
   font-size: 0.85em;
+  height: 100px;
   text-align: center;
-  width: 80%;
+  transition: 0.5s;
+  width: 90%;
+}
+
+.framework:hover {
+  background-color: rgb(65, 65, 65);
+  border: 2px solid rgb(65, 65, 65);
+  height: 170px;
+  transition: 0.5s;
+}
+
+.frameworkSublist {
+  font-size: 0.5em;
+  line-height: normal;
+  opacity: 0;
+  transition: 0.1s;
+}
+
+.framework:hover > .frameworkSublist {
+  opacity: 1;
+  transition: 0.5s 0.1s;
+}
+
+.frameworkLine {
+  width: 75%;
 }

@@ -53,7 +53,7 @@ export const Header = () => {
             }),
           }}
         />
-        <button onClick={() => (window.location.href = "/about")}>{"ABOUT"}</button>
+        <button onClick={() => (window.location.href = "/resume")}>{"RESUME"}</button>
       </nav>
     </div>
   );
